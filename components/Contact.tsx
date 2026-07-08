@@ -9,8 +9,11 @@ export default function Contact() {
           Let&apos;s build something great together
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-slate-400">
-          I&apos;m open to senior software engineering roles. Reach out and
-          I&apos;ll get back to you quickly.
+          I&apos;m open to full-stack software engineering roles internationally.
+          Reach out and I&apos;ll get back to you quickly.
+        </p>
+        <p className="mx-auto mt-3 max-w-xl text-sm text-accent">
+          {profile.availability} · {profile.workAuth}
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-4">

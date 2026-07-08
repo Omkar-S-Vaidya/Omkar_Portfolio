@@ -4,10 +4,15 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="mx-auto max-w-5xl px-6 pb-12 pt-20 md:pt-28">
-        <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-slate-300 animate-fade-up">
-          <span className="h-2 w-2 rounded-full bg-accent" />
-          Available for new opportunities · {profile.location}
-        </p>
+        <div className="mb-4 flex flex-wrap items-center gap-2 animate-fade-up">
+          <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-slate-300">
+            <span className="h-2 w-2 rounded-full bg-accent" />
+            Available for new opportunities · {profile.location}
+          </p>
+          <p className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm text-accent">
+            {profile.availability}
+          </p>
+        </div>
 
         <h1 className="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-white animate-fade-up md:text-6xl">
           {profile.name.split(" ").slice(0, 2).join(" ")}{" "}
@@ -37,17 +42,21 @@ export default function Hero() {
           >
             LinkedIn
           </a>
-          {profile.resumeUrl && (
+          {(profile.resumePdf || profile.resumeUrl) && (
             <a
-              href={profile.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={profile.resumePdf || profile.resumeUrl}
+              target={profile.resumePdf ? "_blank" : undefined}
+              rel={profile.resumePdf ? "noopener noreferrer" : undefined}
               className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-accent hover:text-accent"
             >
               Résumé
             </a>
           )}
         </div>
+
+        <p className="mt-5 text-sm text-slate-500 animate-fade-up">
+          {profile.workAuth}
+        </p>
 
         <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {stats.map((s) => (

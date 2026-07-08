@@ -22,6 +22,22 @@ export default function Projects() {
               {p.blurb}
             </p>
 
+            {p.metrics && p.metrics.length > 0 && (
+              <div className="mt-4 grid grid-cols-3 gap-2">
+                {p.metrics.map((m) => (
+                  <div
+                    key={m.label}
+                    className="rounded-xl border border-white/10 bg-white/5 px-2 py-3 text-center"
+                  >
+                    <div className="text-base font-bold text-white">{m.value}</div>
+                    <div className="mt-0.5 text-[11px] leading-tight text-slate-400">
+                      {m.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
             <ul className="mt-4 space-y-2">
               {p.highlights.map((h) => (
                 <li key={h} className="flex gap-2 text-sm text-slate-300">
