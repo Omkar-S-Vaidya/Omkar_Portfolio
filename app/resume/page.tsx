@@ -8,6 +8,7 @@ import {
   experience,
   education,
   certifications,
+  siteUrl,
 } from "@/data/site";
 
 export default function ResumePage() {
@@ -42,6 +43,9 @@ export default function ResumePage() {
             <a href={`tel:${profile.phone.replace(/\s/g, "")}`}>{profile.phone}</a>
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
               LinkedIn
+            </a>
+            <a href={siteUrl} target="_blank" rel="noopener noreferrer">
+              Portfolio
             </a>
             {profile.github && (
               <a href={profile.github} target="_blank" rel="noopener noreferrer">
