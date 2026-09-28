@@ -168,7 +168,7 @@ export const experience: Experience[] = [
   {
     role: "Full Stack Developer Intern",
     company: "Wibyng Technologies Pvt. Ltd.",
-    period: "Internship",
+    period: "Dec 2022 – July 2023",
     location: "India",
     points: [
       "Developed backend functionality across 3 interconnected enterprise modules: CRM, Vendor Portal, and Customer Portal.",

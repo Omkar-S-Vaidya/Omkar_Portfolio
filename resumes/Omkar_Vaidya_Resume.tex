@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% Links are written out in full: most ATS parsers drop hyperlink targets.
+\begin{center}
+\textbf{\Huge \scshape Omkar Sanjay Vaidya} \\ \vspace{1pt}
+\small +91 8806061235 $|$
+\href{mailto:omkarvaidya0504@gmail.com}{omkarvaidya0504@gmail.com} $|$
+Pune, India \\
+\href{https://www.linkedin.com/in/omkar-vaidya-54b7a0261/}{linkedin.com/in/omkar-vaidya-54b7a0261} $|$
+\href{https://github.com/Omkar-S-Vaidya}{github.com/Omkar-S-Vaidya} $|$
+\href{https://omkar-portfolio-mu-amber.vercel.app/}{omkar-portfolio-mu-amber.vercel.app}
+\end{center}
+
+%-----------Professional Summary-----------
+\section{Professional Summary}
+\small{Lead Software Engineer with 3.2+ years of hands-on experience designing and building scalable backend services and full-stack web applications using Node.js, .NET Core, React, and Next.js. Strong focus on backend architecture, distributed microservices, and event-driven systems (AWS Lambda, SQS, SNS, EventBridge), building multi-tenant platforms that serve \textbf{120,000+ active customer-portal users} across two UK energy suppliers (OTM and HET). Leads the 8-engineer team behind that platform, balancing technical direction with continued hands-on development.}
+
+%-----------Technical Skills-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+
+\resumeSubItem{\textbf{Languages:} TypeScript, JavaScript (ES6+), C\#, SQL}
+
+\resumeSubItem{\textbf{Frontend:} React.js, Next.js, Angular, Flutter, Tailwind CSS, HTML5, CSS3}
+
+\resumeSubItem{\textbf{Backend:} Node.js, Fastify, Express.js, .NET Core, REST APIs, JWT Authentication}
+
+\resumeSubItem{\textbf{Databases:} PostgreSQL, MongoDB, MySQL}
+
+\resumeSubItem{\textbf{Cloud:} AWS, AWS Lambda, SQS, SNS, EventBridge, Azure DevOps}
+
+\resumeSubItem{\textbf{Architecture:} Microservices, Distributed Systems, Multi-Tenant SaaS, Event-Driven Architecture, System Design}
+
+\resumeSubItem{\textbf{Tools:} Git, GitHub, CI/CD, Agile, Scrum}
+
+\resumeSubItem{\textbf{Soft Skills:} Problem Solving, Debugging, Requirement Analysis, Code Review, Technical Leadership}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Centralogic}{07/2023 -- Present}
+    {Lead Software Engineer}{09/2024 -- Present}
+  \resumeSubSubheading
+    {Software Engineer}{07/2023 -- 09/2024}
+  \resumeItemListStart
+
+    \resumeItem{Designed and developed \textbf{10+ enterprise-grade backend services and web application modules} using Node.js, .NET Core, React, Next.js, Angular, PostgreSQL, and MongoDB.}
+
+    \resumeItem{Built scalable, multi-tenant SaaS platforms using a distributed microservices architecture, improving maintainability and enabling independently deployable services across multiple enterprise applications, contributing to an estimated \textbf{30\%} improvement in maintainability and deployment efficiency.}
+
+    \resumeItem{Implemented event-driven communication using \textbf{AWS Lambda, SQS, SNS, and EventBridge} to decouple services and handle long-running billing and notification workflows asynchronously.}
+
+    \resumeItem{Designed and integrated \textbf{20+ secure REST API endpoints} with authentication, authorization, validation, centralized error handling, and role-based access controls.}
+
+    \resumeItem{Led a cross-functional team of \textbf{8 engineers} on the UK Energy multi-tenant SaaS platform (\textbf{120K+ active users} across OTM and HET), owning task delegation and technical direction while remaining primarily hands-on with backend development.}
+
+    \resumeItem{Collaborated with cross-functional engineering, QA, product, and business teams across requirements, architecture, development, deployment, and production support for \textbf{4+ enterprise projects}.}
+
+    \resumeItem{Performed code reviews and optimized backend services, API performance, and database access patterns, including improvements that reduced response times by \textbf{up to 40\%} in performance-critical workflows.}
+
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Wibyng Technologies Pvt. Ltd.}{12/2022 -- 07/2023}
+    {Full Stack Developer Intern}{India}
+  \resumeItemListStart
+
+    \resumeItem{Developed backend functionality across \textbf{3 interconnected enterprise modules:} CRM, Vendor Portal, and Customer Portal.}
+
+    \resumeItem{\textbf{Built 10+} product management, vendor management, and administrative workflows using PHP and CodeIgniter.}
+
+    \resumeItem{Improved multi-role authentication and business workflows across interconnected systems, enabling approximately \textbf{25\% faster workflow} processing across 5+ streamlined business workflows.}
+
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{UK Energy Multi-Tenant Platform}}{}
+  \resumeItemListStart
+
+    \resumeItem{Developed a cloud-native, multi-tenant SaaS platform for the UK energy industry delivering \textbf{7+ major capabilities} across CRM, Customer Portal, Broker Portal, Billing, Pricing, Quotations, and Notifications.}
+
+    \resumeItem{Designed a distributed microservices architecture that runs \textbf{2 energy suppliers, OTM (100K+ users) and HET (20K+ users)}, securely on shared infrastructure while maintaining tenant-level data isolation.}
+
+    \resumeItem{Implemented asynchronous communication using AWS Lambda, SQS, SNS, and EventBridge for reliable cross-service workflows.}
+
+    \resumeItem{Built customer portals serving \textbf{120,000+ active users} across OTM and HET, handling complex billing and quotation workflows.}
+
+    \resumeItem{\textbf{Tech Stack:} Node.js, Fastify, React, Next.js, PostgreSQL, AWS, Tailwind CSS}
+
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Enterprise Multi-Tenant CRM}}{}
+  \resumeItemListStart
+
+    \resumeItem{Designed tenant-isolated architecture supporting multiple organizations from a shared platform.}
+
+    \resumeItem{Optimized database queries reducing response time by approximately \textbf{40\%}.}
+
+    \resumeItem{\textbf{Tech Stack:} Flutter, .NET Core, MongoDB, Azure DevOps}
+
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Activity Planner}}{}
+  \resumeItemListStart
+
+    \resumeItem{Developed a real-time resort management platform supporting employee scheduling, guest management, and event operations.}
+
+    \resumeItem{Designed concurrent workflows supporting over \textbf{100 simultaneous users}.}
+
+    \resumeItem{\textbf{Tech Stack:} Flutter, .NET Core, MongoDB}
+
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{VFS Finland Document Verification}}{}
+  \resumeItemListStart
+
+    \resumeItem{Developed secure document verification workflows for a government-facing application with high reliability and data integrity.}
+
+    \resumeItem{Maintained \textbf{99.9\% production uptime} through fault-tolerant backend design.}
+
+    \resumeItem{\textbf{Tech Stack:} Angular, .NET Core, MySQL}
+
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Pratibha Institute of Business Management}{Pune, India}
+    {Master of Computer Applications (MCA)}{2023 -- 2025}
+
+  \resumeSubheading
+    {Indira College of Commerce and Science}{Pune, India}
+    {Bachelor of Computer Applications (CGPA: 8.89)}{2020 -- 2023}
+
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+
+  \resumeSubItem{\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)}}
+
+\resumeSubHeadingListEnd
+
+\end{document}
