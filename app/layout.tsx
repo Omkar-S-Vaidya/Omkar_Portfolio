@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: fullTitle,
   description: profile.tagline,
   keywords: [
+    "Lead Software Engineer",
     "Full-Stack Software Engineer",
     "Software Engineer",
     ".NET",

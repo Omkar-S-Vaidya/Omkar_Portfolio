@@ -2,10 +2,8 @@
 //  EDIT THIS FILE to update your portfolio content. No other file needs changes.
 // =============================================================================
 //
-//  NOTE ON METRICS: the numbers below (tenants, requests/day, uptime %, etc.)
-//  are CONSERVATIVE ESTIMATES filled in as a starting point. VERIFY each one
-//  against your real experience and adjust before sharing — you'll answer for
-//  these figures in interviews.
+//  NOTE ON METRICS: the numbers below mirror the current résumé. Keep the two
+//  in sync when either changes — you'll answer for these figures in interviews.
 // =============================================================================
 
 // Your live site URL — used for SEO (canonical links, sitemap, social preview).
@@ -14,20 +12,19 @@ export const siteUrl = "https://omkar-portfolio-mu-amber.vercel.app";
 
 export const profile = {
   name: "Omkar Sanjay Vaidya",
-  title: "Full-Stack Software Engineer",
+  title: "Lead Software Engineer",
   location: "Pune, India",
   // Relocation / work-authorization signals for international recruiters.
   availability: "Open to relocation — UK · EU · Singapore · US",
   workAuth: "Requires visa sponsorship",
   tagline:
-    "Full-stack software engineer with ~3 years building scalable, high-performance systems across energy, CRM, and enterprise SaaS — from distributed backends to production-grade frontends.",
+    "Lead Software Engineer with 3.2+ years designing and building scalable backend services and full-stack web applications using Node.js, .NET Core, React, and Next.js.",
   summary:
-    "I design distributed systems, multi-tenant architectures, and high-throughput backend services using .NET, Node.js, and modern frontend frameworks like React and Next.js. I own features end-to-end — from requirement gathering through deployment and monitoring — and build fault-tolerant systems that hold up in production. I'm now looking to bring that experience to product-focused teams abroad.",
+    "I focus on backend architecture, distributed microservices, and event-driven systems (AWS Lambda, SQS, SNS, EventBridge), building multi-tenant platforms that serve 120,000+ active customer-portal users across two UK energy suppliers, OTM and HET. I lead the 8-engineer team behind that platform, balancing technical direction with continued hands-on development.",
   email: "omkarvaidya0504@gmail.com",
   phone: "+91 8806061235",
   linkedin: "https://www.linkedin.com/in/omkar-vaidya-54b7a0261/",
-  // Optional — add your GitHub URL here if you want it shown:
-  github: "",
+  github: "https://github.com/Omkar-S-Vaidya",
   // "/resume" renders the generated, print-to-PDF résumé page. If you drop a
   // PDF at public/Omkar_Vaidya_Resume.pdf, set resumePdf below to prefer it.
   resumeUrl: "/resume",
@@ -35,30 +32,46 @@ export const profile = {
 };
 
 export const stats = [
-  { value: "~3 yrs", label: "Experience" },
-  { value: "5+", label: "Tech stacks" },
-  { value: "10+", label: "Enterprise projects" },
-  { value: "Multi-tenant", label: "Architecture focus" },
+  { value: "3.2+ yrs", label: "Experience" },
+  { value: "8", label: "Engineers led" },
+  { value: "10+", label: "Backend services built" },
+  { value: "120K+", label: "Active portal users" },
 ];
 
 export type SkillGroup = { title: string; items: string[] };
 
 export const skills: SkillGroup[] = [
-  { title: "Languages", items: ["C#", "JavaScript", "TypeScript"] },
-  { title: "Frontend", items: ["React", "Next.js", "Angular", "Tailwind CSS"] },
-  { title: "Backend", items: [".NET Core", "Node.js", "REST APIs", "Fastify"] },
+  { title: "Languages", items: ["TypeScript", "JavaScript (ES6+)", "C#", "SQL"] },
+  {
+    title: "Frontend",
+    items: ["React.js", "Next.js", "Angular", "Flutter", "Tailwind CSS", "HTML5", "CSS3"],
+  },
+  {
+    title: "Backend",
+    items: ["Node.js", "Fastify", "Express.js", ".NET Core", "REST APIs", "JWT Authentication"],
+  },
   { title: "Databases", items: ["PostgreSQL", "MongoDB", "MySQL"] },
+  { title: "Cloud", items: ["AWS Lambda", "SQS", "SNS", "EventBridge", "Azure DevOps"] },
   {
     title: "Architecture",
-    items: ["Distributed Systems", "Microservices", "Multi-Tenant Architecture"],
+    items: [
+      "Microservices",
+      "Distributed Systems",
+      "Multi-Tenant SaaS",
+      "Event-Driven Architecture",
+      "System Design",
+    ],
   },
+  { title: "Tools", items: ["Git", "GitHub", "CI/CD", "Agile", "Scrum"] },
   {
-    title: "Cloud & DevOps",
-    items: ["AWS (Lambda, SQS, SNS, EventBridge)", "Azure DevOps", "CI/CD"],
-  },
-  {
-    title: "Practices",
-    items: ["Agile / Scrum", "Git", "Code Reviews", "Performance Optimization"],
+    title: "Soft Skills",
+    items: [
+      "Problem Solving",
+      "Debugging",
+      "Requirement Analysis",
+      "Code Review",
+      "Technical Leadership",
+    ],
   },
 ];
 
@@ -68,68 +81,59 @@ export type Project = {
   highlights: string[];
   stack: string[];
   domain: string;
-  // Optional impact row — replace bracketed placeholders with real numbers.
+  // Optional impact row shown on the project card.
   metrics?: { value: string; label: string }[];
 };
 
 export const projects: Project[] = [
   {
-    name: "UK Energy Sector Platform",
+    name: "UK Energy Multi-Tenant Platform",
     domain: "Energy · Multi-tenant SaaS",
     blurb:
-      "A multi-tenant platform for the UK energy market built on a microservices architecture — CRM, customer portal, and broker portal sharing a suite of backend services (pricing, billing, accounts, quotation, notifications).",
+      "A cloud-native, multi-tenant SaaS platform for the UK energy industry delivering 7+ major capabilities across CRM, Customer Portal, Broker Portal, Billing, Pricing, Quotations, and Notifications.",
     highlights: [
-      "Designed a multi-tenant architecture that let 5+ organizations onboard with customizable workflows from a shared platform.",
-      "Built event-driven backend services (SQS/SNS/EventBridge) that process 10K+ requests/day with resilient async communication across services.",
-      "Delivered customer- and broker-facing portals handling complex real-world billing and quotation logic used by 500+ users.",
+      "Designed a distributed microservices architecture that runs 2 energy suppliers — OTM (100K+ users) and HET (20K+ users) — securely on shared infrastructure while maintaining tenant-level data isolation.",
+      "Implemented asynchronous communication using AWS Lambda, SQS, SNS, and EventBridge for reliable cross-service workflows.",
+      "Built customer portals serving 120,000+ active users across OTM and HET, handling complex billing and quotation workflows.",
     ],
-    stack: [
-      "React",
-      "Next.js",
-      "Node.js",
-      "Fastify",
-      "PostgreSQL",
-      "AWS (Lambda, SQS, SNS, EventBridge)",
-      "Tailwind CSS",
-    ],
+    stack: ["Node.js", "Fastify", "React", "Next.js", "PostgreSQL", "AWS", "Tailwind CSS"],
     metrics: [
-      { value: "5+", label: "Tenants onboarded" },
-      { value: "8", label: "Backend services" },
-      { value: "10K+", label: "Requests/day" },
+      { value: "7+", label: "Major capabilities" },
+      { value: "2", label: "Energy suppliers (OTM, HET)" },
+      { value: "120K+", label: "Active portal users" },
     ],
   },
   {
-    name: "Multi-Tenant CRM Platform",
+    name: "Enterprise Multi-Tenant CRM",
     domain: "CRM · Enterprise",
-    blurb:
-      "A scalable multi-tenant CRM supporting multiple organizations with high-volume data processing.",
+    blurb: "A tenant-isolated CRM supporting multiple organizations from a shared platform.",
     highlights: [
-      "Architected tenant isolation and shared services so 10+ organizations run securely from one platform.",
-      "Optimized high-volume data operations, cutting key query/response times by ~40% and enabling faster org onboarding.",
+      "Designed a tenant-isolated architecture supporting multiple organizations from a shared platform.",
+      "Optimized database queries, reducing response time by approximately 40%.",
     ],
-    stack: ["Flutter", ".NET", "MongoDB", "Azure DevOps"],
+    stack: ["Flutter", ".NET Core", "MongoDB", "Azure DevOps"],
   },
   {
-    name: "Activity Planner (Resort Management)",
+    name: "Activity Planner",
     domain: "Hospitality · Real-time",
     blurb:
-      "A real-time resort management system handling concurrent operations across events, employees, and guest workflows.",
+      "A real-time resort management platform supporting employee scheduling, guest management, and event operations.",
     highlights: [
-      "Implemented dynamic scheduling and operational workflows across events, staff, and guests.",
-      "Handled concurrent, real-time operations reliably for 100+ simultaneous users/events.",
+      "Developed real-time workflows for employee scheduling, guest management, and event operations.",
+      "Designed concurrent workflows supporting over 100 simultaneous users.",
     ],
-    stack: ["Flutter", ".NET", "MongoDB", "Azure DevOps"],
+    stack: ["Flutter", ".NET Core", "MongoDB"],
   },
   {
-    name: "VFS Finland — Document Verification",
+    name: "VFS Finland Document Verification",
     domain: "GovTech · Security",
     blurb:
-      "A secure, fault-tolerant document processing platform built around data integrity and reliability.",
+      "Secure document verification workflows for a government-facing application with high reliability and data integrity.",
     highlights: [
-      "Built secure document workflows with strong data-integrity guarantees for a government-facing use case.",
-      "Focused on fault tolerance and reliable processing, sustaining 99.9% uptime in production.",
+      "Developed secure document verification workflows with high reliability and data integrity.",
+      "Maintained 99.9% production uptime through fault-tolerant backend design.",
     ],
-    stack: ["Angular", ".NET", "MySQL", "Azure DevOps"],
+    stack: ["Angular", ".NET Core", "MySQL"],
   },
 ];
 
@@ -138,43 +142,60 @@ export type Experience = {
   company: string;
   period: string;
   location: string;
+  // Optional line for in-company promotions, shown under the company name.
+  progression?: string;
   points: string[];
 };
 
 export const experience: Experience[] = [
   {
-    role: "Software Engineer",
+    role: "Lead Software Engineer",
     company: "Centralogic",
     period: "July 2023 – Present",
     location: "Pune, India",
+    progression:
+      "Lead Software Engineer (Sep 2024 – Present) · Software Engineer (Jul 2023 – Sep 2024)",
     points: [
-      "Deliver features across 6+ enterprise-grade applications spanning different domains and tech stacks (.NET, Node.js, React, Angular).",
-      "Own features end-to-end — from requirement gathering through deployment and production monitoring.",
-      "Design and build systems on modular, distributed architecture principles, including multi-tenant SaaS and event-driven services.",
-      "Collaborate with cross-functional teams; drive code reviews, design discussions, and performance optimizations.",
+      "Designed and developed 10+ enterprise-grade backend services and web application modules using Node.js, .NET Core, React, Next.js, Angular, PostgreSQL, and MongoDB.",
+      "Built scalable, multi-tenant SaaS platforms using a distributed microservices architecture, enabling independently deployable services across multiple enterprise applications and contributing to an estimated 30% improvement in maintainability and deployment efficiency.",
+      "Implemented event-driven communication using AWS Lambda, SQS, SNS, and EventBridge to decouple services and handle long-running billing and notification workflows asynchronously.",
+      "Designed and integrated 20+ secure REST API endpoints with authentication, authorization, validation, centralized error handling, and role-based access controls.",
+      "Led a cross-functional team of 8 engineers on the UK Energy multi-tenant SaaS platform (120K+ active users across OTM and HET), owning task delegation and technical direction while remaining primarily hands-on with backend development.",
+      "Collaborated with cross-functional engineering, QA, product, and business teams across requirements, architecture, development, deployment, and production support for 4+ enterprise projects.",
+      "Performed code reviews and optimized backend services, API performance, and database access patterns, including improvements that reduced response times by up to 40% in performance-critical workflows.",
     ],
   },
   {
     role: "Full Stack Developer Intern",
     company: "Wibyng Technologies Pvt. Ltd.",
-    period: "6-Month Internship",
+    period: "Internship",
     location: "India",
     points: [
-      "Built backend features for a multi-platform e-commerce ecosystem of three interconnected systems: customer portal, CRM, and vendor portal.",
-      "Developed vendor-management and product-handling features using CodeIgniter (PHP).",
-      "Contributed to a complex, multi-role architecture serving distinct user types.",
+      "Developed backend functionality across 3 interconnected enterprise modules: CRM, Vendor Portal, and Customer Portal.",
+      "Built 10+ product management, vendor management, and administrative workflows using PHP and CodeIgniter.",
+      "Improved multi-role authentication and business workflows across interconnected systems, enabling approximately 25% faster workflow processing across 5+ streamlined business workflows.",
     ],
   },
 ];
 
-export const education = {
-  degree: "Bachelor of Computer Applications (BCA)",
-  school: "Indira College of Commerce and Science",
-  detail: "CGPA: 8.89",
-};
+export type Education = { degree: string; school: string; period: string; detail?: string };
+
+export const education: Education[] = [
+  {
+    degree: "Master of Computer Applications (MCA)",
+    school: "Pratibha Institute of Business Management, Pune",
+    period: "2023 – 2025",
+  },
+  {
+    degree: "Bachelor of Computer Applications (BCA)",
+    school: "Indira College of Commerce and Science, Pune",
+    period: "2020 – 2023",
+    detail: "CGPA: 8.89",
+  },
+];
 
 export const certifications = [
-  "Microsoft Azure Fundamentals (AZ-900) — In progress",
+  "Microsoft Azure Fundamentals (AZ-900)",
   "Full Stack Web Development — React, Node.js, REST APIs",
   ".NET Core & Web API Development",
   "MongoDB & NoSQL Database Design",

@@ -86,7 +86,10 @@ export default function ResumePage() {
                   </h3>
                   <span className="text-[12px] text-slate-500">{job.period}</span>
                 </div>
-                <p className="text-[12px] italic text-slate-500">{job.location}</p>
+                <p className="text-[12px] italic text-slate-500">
+                  {job.location}
+                  {job.progression && ` · ${job.progression}`}
+                </p>
                 <ul className="mt-1 list-disc space-y-1 pl-5 text-slate-700">
                   {job.points.map((p) => (
                     <li key={p}>{p}</li>
@@ -122,11 +125,16 @@ export default function ResumePage() {
 
         {/* Education */}
         <Section title="Education">
-          <p className="text-slate-700">
-            <span className="font-semibold text-slate-900">{education.degree}</span>
-            {" — "}
-            {education.school} · {education.detail}
-          </p>
+          <div className="space-y-1">
+            {education.map((e) => (
+              <p key={e.degree} className="text-slate-700">
+                <span className="font-semibold text-slate-900">{e.degree}</span>
+                {" — "}
+                {e.school} · {e.period}
+                {e.detail && ` · ${e.detail}`}
+              </p>
+            ))}
+          </div>
         </Section>
 
         {/* Certifications */}

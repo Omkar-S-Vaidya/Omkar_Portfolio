@@ -20,6 +20,9 @@ export default function ExperienceSection() {
             <p className="text-accent">
               {job.company} · <span className="text-slate-400">{job.location}</span>
             </p>
+            {job.progression && (
+              <p className="mt-1 text-xs text-slate-500">{job.progression}</p>
+            )}
 
             <ul className="mt-4 space-y-2">
               {job.points.map((pt) => (

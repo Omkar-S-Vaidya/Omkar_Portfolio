@@ -31,6 +31,16 @@ export default function Contact() {
           >
             LinkedIn
           </a>
+          {profile.github && (
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-accent hover:text-accent"
+            >
+              GitHub
+            </a>
+          )}
           <a
             href={`tel:${profile.phone.replace(/\s/g, "")}`}
             className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-accent hover:text-accent"

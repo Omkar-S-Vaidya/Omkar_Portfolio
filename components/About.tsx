@@ -16,9 +16,16 @@ export default function About() {
             <h3 className="text-sm font-semibold uppercase tracking-widest text-accent">
               Education
             </h3>
-            <p className="mt-2 font-semibold text-white">{education.degree}</p>
-            <p className="text-sm text-slate-400">{education.school}</p>
-            <p className="text-sm text-slate-500">{education.detail}</p>
+            {education.map((e) => (
+              <div key={e.degree} className="mt-3 first:mt-2">
+                <p className="font-semibold text-white">{e.degree}</p>
+                <p className="text-sm text-slate-400">{e.school}</p>
+                <p className="text-sm text-slate-500">
+                  {e.period}
+                  {e.detail && ` · ${e.detail}`}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
