@@ -1,0 +1,176 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+% ONE-PAGE Gen AI resume (trimmed from Omkar_Vaidya_GenAI_Resume.tex).
+% Set at 10pt to fit one page; Key Achievements lives in the two-page version.
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+% Change the headline per application ("AI Engineer", "LLM Application Engineer").
+\begin{center}
+\textbf{\Huge \scshape Omkar Sanjay Vaidya} \\ \vspace{2pt}
+\large Lead Software Engineer $|$ Generative AI \& LLM Applications $|$ Azure OpenAI $\cdot$ TypeScript $\cdot$ Node.js \\ \vspace{2pt}
+\small +91 8806061235 $|$
+\href{mailto:omkarvaidya0504@gmail.com}{omkarvaidya0504@gmail.com} $|$
+Pune, India \\
+\href{https://www.linkedin.com/in/omkar-vaidya-54b7a0261/}{linkedin.com/in/omkar-vaidya-54b7a0261} $|$
+\href{https://github.com/Omkar-S-Vaidya}{github.com/Omkar-S-Vaidya} $|$
+\href{https://omkar-portfolio-mu-amber.vercel.app/}{omkar-portfolio-mu-amber.vercel.app}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Lead Software Engineer and \textbf{AI application engineer} with 3+ years of experience, delivering \textbf{Generative AI, LLM applications and agentic AI} in enterprise SaaS. Led delivery of an \textbf{LLM-powered text-to-SQL assistant} (Azure OpenAI GPT-4.1) in a multi-tenant energy CRM and built an agentic engineering workflow of \textbf{40+ specialist AI agents} through prompt and context engineering. Treats LLMs as unreliable components: measures behaviour, designs guardrails, never ships false confidence.}
+
+%-----------SKILLS-----------
+% Add only if genuinely used: Python, RAG, LangChain, Vector Search/pgvector.
+% "Prompt Engineering" / "System Prompt Design" rest on authoring the 40+ agent definitions.
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Generative AI \& LLMs:} Azure OpenAI Service, GPT-4.1, Embeddings (text-embedding-3-large), Text-to-SQL, LLM Integration, Prompt Engineering, Conversational AI, Chat Interfaces, Intent Classification, AI Guardrails, Responsible AI}
+\resumeSubItem{\textbf{LLM Evaluation \& LLMOps:} LLM Evaluation, Hallucination Mitigation, Confidence Calibration, Failure-Mode Analysis, LLM Observability \& Tracing, Latency Profiling, Structured Output Validation (Zod), AI Security Review}
+\resumeSubItem{\textbf{Agentic AI:} AI Agents, Multi-Agent Workflows, Tool-Use Agents, System Prompt Design, Context Engineering, Claude Code, AI Code Review}
+\resumeSubItem{\textbf{Languages \& Frameworks:} TypeScript, JavaScript, C\#, SQL, Node.js, Fastify, .NET Core, React.js, Next.js, RESTful APIs, API Design, OpenAPI, Microservices}
+\resumeSubItem{\textbf{Data, Cloud \& Tools:} PostgreSQL, MongoDB, Redis, Apache Kafka, Azure (OpenAI, AKS, DevOps), AWS (Lambda, SQS, SNS), Docker, Kubernetes, CI/CD, Git, GitHub, Vitest}
+\resumeSubItem{\textbf{Practices:} AI Product Development, LLM Application Development, Feature-Flagged Rollouts, SDLC, Agile/Scrum, Technical Leadership, Cross-Functional Collaboration}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Centralogic}{07/2023 -- Present}
+    {Lead Software Engineer}{09/2024 -- Present}
+  \resumeSubSubheading
+    {Software Engineer}{07/2023 -- 09/2024}
+  \resumeItemListStart
+
+    % If you also built backend pieces (prompts, SQL generation, embeddings), use "Designed and built".
+    \resumeItem{Led delivery of \textbf{Rheora AI}, a \textbf{Generative AI assistant} for a US energy CRM that answers plain-English questions over live customer data via an \textbf{Azure OpenAI GPT-4.1 text-to-SQL} service on PostgreSQL.}
+
+    \resumeItem{Ran \textbf{live model evaluation} before launch: found self-reported confidence unreliable in both directions, including a \textbf{confidently wrong answer}, and redesigned answer rendering around \textbf{intent classification} instead of confidence.}
+
+    \resumeItem{Uncovered a \textbf{silent multi-tenant failure mode} (a wrong tenant returned a plausible empty answer) and added zero-row signalling; flagged unauthenticated raw-SQL and LLM-passthrough endpoints for \textbf{security review}.}
+
+    \resumeItem{Hardened the assistant for \textbf{6--8s non-streaming LLM latency}: progress feedback, cancel/retry, persistent conversations, \textbf{run-ID tracing}, schema validation; shipped behind a \textbf{feature flag} with \textbf{20+ test suites}.}
+
+    % Confirm you authored (or led authoring of) these agent definitions.
+    \resumeItem{Built an \textbf{agentic AI development workflow}: authored \textbf{system prompts}, tool permissions and context files for \textbf{40+ domain-specialist AI agents} across \textbf{10 microservices}, including \textbf{regulatory-audit agents} that review billing code against 6 jurisdictions' rules.}
+
+    \resumeItem{Lead \textbf{8 engineers} on a multi-tenant energy platform (\textbf{120K+ users}); primary developer on Billing and Metering services (Node.js, Kafka, PostgreSQL) with \textbf{20+ secure APIs} and \textbf{up to 40\%} faster responses.}
+
+  \resumeItemListEnd
+
+  \vspace{6pt}
+  \resumeSubheading
+    {Wibyng Technologies Pvt. Ltd.}{12/2022 -- 07/2023}
+    {Full Stack Developer Intern}{India}
+  \resumeItemListStart
+    \resumeItem{Built \textbf{10+} workflows across CRM, Vendor and Customer portals in PHP/CodeIgniter, enabling about \textbf{25\% faster processing}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Rheora AI -- GenAI CRM Assistant} $|$ \emph{Azure OpenAI GPT-4.1, Embeddings, FastAPI, PostgreSQL, React}}{}
+  \resumeItemListStart
+    \resumeItem{Questions classified (data, chit-chat, out of scope, ambiguous), translated to SQL and answered in prose, with trust-first UX and no fake confidence badges.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Agentic AI Engineering Toolkit} $|$ \emph{Claude Code, AI Subagents, Context Engineering}}{}
+  \resumeItemListStart
+    \resumeItem{Library of specialised AI agents, each scoped to one domain, that check API contracts and database schemas before generating code.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION & CERTIFICATIONS-----------
+% Confirm MCA dates: some older resumes say 2024 -- 2026.
+% Strong next adds: Microsoft AI-900, then AI-102.
+\section{Education \& Certifications}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Master of Computer Applications (MCA)}, Pratibha Institute of Business Management, Pune \hfill 2023 -- 2025}\vspace{2pt}
+  \resumeItem{\textbf{Bachelor of Computer Applications (CGPA: 8.89)}, Indira College of Commerce and Science, Pune \hfill 2020 -- 2023}\vspace{2pt}
+  \resumeItem{\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)}}
+\resumeSubHeadingListEnd
+
+\end{document}

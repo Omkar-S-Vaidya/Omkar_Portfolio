@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+% TWO-PAGE Lead Software Engineer resume (UK / EU / detailed applications).
+% One-page version: Omkar_Sanjay_Vaidya_Lead_Resume.tex. Keep facts in sync.
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+% Change the headline per application to mirror the job title.
+\begin{center}
+\textbf{\Huge \scshape Omkar Sanjay Vaidya} \\ \vspace{2pt}
+\large Lead Software Engineer / Tech Lead $|$ Backend Architecture \& Microservices $|$ Node.js $\cdot$ TypeScript $\cdot$ AWS $\cdot$ Azure \\ \vspace{2pt}
+\small +91 8806061235 $|$
+\href{mailto:omkarvaidya0504@gmail.com}{omkarvaidya0504@gmail.com} $|$
+Pune, India $|$ Open to relocation \\
+\href{https://www.linkedin.com/in/omkar-vaidya-54b7a0261/}{linkedin.com/in/omkar-vaidya-54b7a0261} $|$
+\href{https://github.com/Omkar-S-Vaidya}{github.com/Omkar-S-Vaidya} $|$
+\href{https://omkar-portfolio-mu-amber.vercel.app/}{omkar-portfolio-mu-amber.vercel.app}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Lead Software Engineer with 3+ years of experience owning the architecture and delivery of \textbf{scalable, multi-tenant, event-driven SaaS platforms} for deregulated energy suppliers. Lead an \textbf{8-engineer team} on a platform serving \textbf{120,000+ active users}, and authored the scaffold behind a \textbf{6-country} platform that turned new-market entry from a 200k-line bespoke build into a \textasciitilde200-line configuration skeleton. Primary owner of the billing and metering microservices and sole developer of supplier switching, across UK and US (ERCOT) regulatory models. Combines hands-on backend engineering with technical leadership, mentoring, code review and cross-functional delivery across the full SDLC.}
+
+%-----------KEY ACHIEVEMENTS-----------
+\section{Key Achievements}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Leadership:} lead 8 engineers; set technical direction, code-review standards and delivery for 4+ enterprise projects.}
+\resumeSubItem{\textbf{Platform leverage:} 6-market platform scaffold; new market = \textasciitilde200-line skeleton instead of a 200k+ line build; 3 bespoke supplier platforms consolidated into 1.}
+\resumeSubItem{\textbf{Ownership \& scale:} primary developer on Billing and Metering \& Consumption, sole developer on Switching; 120K+ active portal users.}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Languages:} TypeScript, JavaScript (ES6+), C\#, SQL, HTML5, CSS3}
+\resumeSubItem{\textbf{Backend:} Node.js, Fastify, Express.js, .NET Core, RESTful APIs, API Design, OpenAPI/Swagger, JWT, Keycloak (OIDC), OAuth 2.0, RBAC, Row-Level Security}
+\resumeSubItem{\textbf{Architecture:} Microservices, Event-Driven Architecture, Multi-Tenant SaaS, Tenant Isolation, Distributed Systems, System Design, Scalability, Performance Optimization, Monorepo Platform Design}
+\resumeSubItem{\textbf{Messaging \& Caching:} Apache Kafka (KafkaJS), AWS SQS/SNS/EventBridge, Redis}
+\resumeSubItem{\textbf{Data:} PostgreSQL, MongoDB, MySQL, Data Modeling, Schema Design, Query Optimization}
+\resumeSubItem{\textbf{Cloud \& DevOps:} AWS (Lambda, SQS, SNS, EventBridge), Microsoft Azure (AKS, Blob Storage, DevOps, OpenAI), Docker, Kubernetes, Helm, CI/CD, Git, GitHub}
+\resumeSubItem{\textbf{Observability \& Quality:} Prometheus, Structured Logging (Pino), Vitest, Unit \& Integration Testing, ESLint, Prettier, Code Review}
+\resumeSubItem{\textbf{Frontend:} React.js, Next.js, Angular, Tailwind CSS}
+\resumeSubItem{\textbf{Leadership:} Technical Leadership, Team Management, Mentoring, Task Delegation, Stakeholder Management, Requirement Analysis, SDLC, Agile/Scrum, Production Support}
+\resumeSubItem{\textbf{Domain:} US Retail Energy (ERCOT, ESIID, 15-min interval data, VEE), UK Energy (MPAN/MPRN, HH/NHH, D0019/D0300/D0086 flows), Billing \& Payments, Supplier Switching}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Centralogic}{07/2023 -- Present}
+    {Lead Software Engineer}{09/2024 -- Present}
+  \resumeSubSubheading
+    {Software Engineer}{07/2023 -- 09/2024}
+  \resumeItemListStart
+
+    \resumeItem{Lead a team of \textbf{8 engineers} on the UK Energy multi-tenant SaaS platform (\textbf{120K+ active users}), owning task delegation, technical direction, mentoring and code review while staying hands-on in backend development.}
+
+    \resumeItem{Authored the \textbf{monorepo scaffold and country-app skeletons} for a \textbf{6-market platform} (US, GB, Ireland, Netherlands, Sweden, Bulgaria) that a 6-engineer team now builds on, cutting new-market entry from a \textbf{200k+ line} bespoke build to a \textbf{\textasciitilde200-line} configuration skeleton.}
+
+    \resumeItem{Drove consolidation of \textbf{3 bespoke supplier platforms} into a single multi-tenant product where onboarding a supplier is tenant configuration, not a new build.}
+
+    \resumeItem{\textbf{Primary developer} on the \textbf{Billing Service} (dual-fuel billing, contract rates, payment collection, reporting) and the \textbf{Metering \& Consumption Service} (UK HH/NHH reads; US ERCOT 15-minute intervals, VEE validation); \textbf{sole developer} on the regulated \textbf{Switching} service.}
+
+    \resumeItem{Contributed to platform-wide \textbf{tenant isolation}: JWT-claim-authoritative tenant resolution via \textbf{Keycloak} and PostgreSQL \textbf{row-level security} across accounts, pricing and market-operations services.}
+
+    \resumeItem{Built an \textbf{event-driven microservice fleet} (accounts, billing, pricing, quotation, metering, switching, notifications) on \textbf{Apache Kafka}, \textbf{AWS Lambda, SQS, SNS, EventBridge} and \textbf{Azure AKS} with shared event schemas, contributing to an estimated \textbf{30\% improvement} in maintainability and deployment efficiency.}
+
+    \resumeItem{Made owned services production-grade: \textbf{Redis} caching, \textbf{Prometheus} metrics, structured logging, \textbf{OpenAPI} documentation, PDF bill rendering (Puppeteer) to Azure Blob Storage, and \textbf{Docker/Helm} deployments to Kubernetes.}
+
+    \resumeItem{Designed \textbf{20+ secure RESTful API endpoints} with JWT, RBAC and validation, and tuned queries and database access patterns to cut response times by \textbf{up to 40\%} in performance-critical workflows.}
+
+    \resumeItem{Led delivery of an \textbf{Azure OpenAI GPT-4.1} assistant inside the CRM with evaluation-driven guardrails, and introduced \textbf{AI-assisted engineering} with 40+ domain-specialist AI agents across 10 services.}
+
+    \resumeItem{Partnered with QA, product and business stakeholders across requirements, architecture, releases and production support for \textbf{4+ enterprise projects}.}
+
+  \resumeItemListEnd
+
+  \vspace{6pt}
+  \resumeSubheading
+    {Wibyng Technologies Pvt. Ltd.}{12/2022 -- 07/2023}
+    {Full Stack Developer Intern}{India}
+  \resumeItemListStart
+    \resumeItem{Developed backend functionality across \textbf{3 interconnected enterprise modules}: CRM, Vendor Portal and Customer Portal.}
+    \resumeItem{Built \textbf{10+} product, vendor and admin workflows in PHP/CodeIgniter with multi-role authentication, enabling about \textbf{25\% faster processing}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Multi-Market Energy Platform} $|$ \emph{Node.js, Fastify, TypeScript, Next.js, PostgreSQL, Kafka, Keycloak, Azure AKS}}{}
+  \resumeItemListStart
+    \resumeItem{Event-driven microservices (accounts, billing, pricing, quotation, metering, switching, market operations, notifications) for energy suppliers across \textbf{6 country markets}; supplier onboarding is configuration, not code.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{UK Energy Suppliers -- OTM, HET, One Business Energy} $|$ \emph{Node.js, Fastify, React, PostgreSQL, AWS}}{}
+  \resumeItemListStart
+    \resumeItem{Billing, metering, switching and CRM for \textbf{3 UK suppliers}, including \textbf{OTM (100K+ users)} and \textbf{HET (20K+ users)}, built against UK industry data flows (D0019, D0300, D0086), gas MBR and dispute reporting.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{US Market Build -- ERCOT} $|$ \emph{Node.js, TypeScript, Next.js, PostgreSQL, Kafka, Redis, Azure AKS}}{}
+  \resumeItemListStart
+    \resumeItem{US metering stack ahead of first supplier onboarding: ESIID lookup, 15-minute interval ingestion, VEE validation, read-source tracking, meter lifecycle and usage analytics.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Rheora AI -- CRM Assistant} $|$ \emph{Azure OpenAI GPT-4.1, FastAPI, PostgreSQL, React, TypeScript}}{}
+  \resumeItemListStart
+    \resumeItem{Plain-English questions over live multi-tenant CRM data via text-to-SQL, with guardrails designed from measured model behaviour.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+% Confirm MCA dates: some older resumes say 2024 -- 2026.
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Pratibha Institute of Business Management}{Pune, India}
+    {Master of Computer Applications (MCA)}{2023 -- 2025}
+  \resumeSubheading
+    {Indira College of Commerce and Science}{Pune, India}
+    {Bachelor of Computer Applications (CGPA: 8.89)}{2020 -- 2023}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeSubItem{\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)}}
+\resumeSubHeadingListEnd
+
+\end{document}

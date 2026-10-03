@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+% TWO-PAGE Full Stack resume (UK / EU / detailed applications).
+% One-page version: Omkar_Sanjay_Vaidya_FullStack_Resume.tex. Keep facts in sync.
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+% Change the headline per application to mirror the job title.
+\begin{center}
+\textbf{\Huge \scshape Omkar Sanjay Vaidya} \\ \vspace{2pt}
+\large Full Stack Developer $|$ React $\cdot$ Next.js $\cdot$ Node.js $\cdot$ TypeScript $\cdot$ PostgreSQL $\cdot$ AWS $\cdot$ Azure \\ \vspace{2pt}
+\small +91 8806061235 $|$
+\href{mailto:omkarvaidya0504@gmail.com}{omkarvaidya0504@gmail.com} $|$
+Pune, India $|$ Open to relocation \\
+\href{https://www.linkedin.com/in/omkar-vaidya-54b7a0261/}{linkedin.com/in/omkar-vaidya-54b7a0261} $|$
+\href{https://github.com/Omkar-S-Vaidya}{github.com/Omkar-S-Vaidya} $|$
+\href{https://omkar-portfolio-mu-amber.vercel.app/}{omkar-portfolio-mu-amber.vercel.app}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Full Stack Developer (currently Lead Software Engineer) with 3+ years of experience building \textbf{scalable web applications end to end}, from PostgreSQL data models and Node.js/Fastify microservices to responsive React and Next.js interfaces, for energy platforms serving \textbf{120,000+ active users}. Top contributor to a 15-module operations CRM, builder of customer and broker self-service portals, and author of the monorepo scaffold behind \textbf{6 country apps} sharing \textbf{18 internal packages}. Writes typed, tested code (TypeScript, Zod, TanStack Query, Vitest), works across the full SDLC with product, QA and business teams, and ships modern features including an Azure OpenAI GPT-4.1 assistant.}
+
+%-----------KEY ACHIEVEMENTS-----------
+\section{Key Achievements}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Product surface:} operations CRM (15 modules), customer portal, broker portal and enrollment journey for 120K+ users.}
+\resumeSubItem{\textbf{Frontend platform:} Turborepo/pnpm monorepo, 6 country apps on 18 shared packages (UI, theme, API client, auth, feature flags, i18n, forms).}
+\resumeSubItem{\textbf{Backend depth:} primary developer on Billing and Metering services; 20+ secure REST APIs; response times cut by up to 40\%.}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Frontend:} React.js, Next.js (App Router, SSR), TypeScript, State Management (TanStack Query), React Hook Form, Zod, Tailwind CSS, HTML5, CSS3, Vite, Angular, Flutter, Responsive Design, Accessibility (ARIA)}
+\resumeSubItem{\textbf{Backend:} Node.js, Fastify, Express.js, .NET Core, RESTful APIs, API Design, OpenAPI/Swagger, Backend-for-Frontend (BFF), JWT, Keycloak (OIDC), OAuth 2.0, RBAC}
+\resumeSubItem{\textbf{Data \& Messaging:} PostgreSQL, MongoDB, MySQL, Redis, Data Modeling, Query Optimization, Row-Level Security, Apache Kafka, AWS SQS/SNS/EventBridge}
+\resumeSubItem{\textbf{Testing \& Quality:} Vitest (Jest-compatible), React Testing Library, MSW, Unit \& Integration Testing, ESLint, Prettier, Husky, Code Review}
+\resumeSubItem{\textbf{Frontend Architecture:} Monorepos (Turborepo, pnpm Workspaces), Shared Design Systems, Component Libraries, Feature Flags, i18n, Multi-Tenant UI}
+\resumeSubItem{\textbf{Cloud \& DevOps:} AWS (Lambda, SQS, SNS, EventBridge), Microsoft Azure (AKS, Blob Storage, DevOps, OpenAI), Docker, Kubernetes, Helm, CI/CD, Git, GitHub}
+\resumeSubItem{\textbf{Languages \& Practices:} TypeScript, JavaScript (ES6+), C\#, SQL, SDLC, Agile/Scrum, Performance Optimization, Cross-Functional Collaboration, Problem Solving}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Centralogic}{07/2023 -- Present}
+    {Lead Software Engineer}{09/2024 -- Present}
+  \resumeSubSubheading
+    {Software Engineer}{07/2023 -- 09/2024}
+  \resumeItemListStart
+
+    \resumeItem{Built and maintained the \textbf{operations CRM} in React and TypeScript (accounts, billing, payments, quotation, pricing, metering, market operations, users and more), one of its \textbf{top contributors} across the project lifetime.}
+
+    \resumeItem{Delivered \textbf{customer and broker portal} features in \textbf{Next.js} for \textbf{120K+ users}: self-service meter reads, usage, billing and payments for customers; quoting, contracts and account visibility for brokers.}
+
+    \resumeItem{Built the \textbf{signup and enrollment journey} end to end: quote to contract, supply-point capture and registration into the regulated industry switching process.}
+
+    \resumeItem{Authored the \textbf{monorepo scaffold and country-app skeletons} for \textbf{6 country apps} sharing \textbf{18 internal packages}; a new market starts from a \textbf{\textasciitilde200-line} skeleton instead of a \textbf{200k+ line} app.}
+
+    \resumeItem{\textbf{Primary developer} on the \textbf{Billing} and \textbf{Metering \& Consumption} microservices (Node.js, Fastify, PostgreSQL, \textbf{Kafka}, \textbf{Redis}) and \textbf{sole developer} on Switching, designing \textbf{20+ secure RESTful APIs} with JWT, Keycloak, RBAC and OpenAPI docs, plus PDF bill rendering with Puppeteer.}
+
+    \resumeItem{Contributed to platform-wide \textbf{tenant isolation} with Keycloak-based tenant resolution and PostgreSQL row-level security across services.}
+
+    \resumeItem{Led delivery of \textbf{Rheora AI}, an \textbf{Azure OpenAI GPT-4.1} assistant in the CRM: docked chat panel opened with Cmd/Ctrl+K, conversations that survive navigation, cancel/retry, run-ID tracing, behind a feature flag with \textbf{20+ test suites}.}
+
+    \resumeItem{Optimized API performance and database access patterns, cutting response times by \textbf{up to 40\%}; lead a team of \textbf{8 engineers} while staying hands-on across the stack.}
+
+  \resumeItemListEnd
+
+  \vspace{6pt}
+  \resumeSubheading
+    {Wibyng Technologies Pvt. Ltd.}{12/2022 -- 07/2023}
+    {Full Stack Developer Intern}{India}
+  \resumeItemListStart
+    \resumeItem{Developed full stack functionality across \textbf{3 interconnected enterprise modules}: CRM, Vendor Portal and Customer Portal.}
+    \resumeItem{Built \textbf{10+} product, vendor and admin workflows in PHP/CodeIgniter with multi-role authentication, enabling about \textbf{25\% faster processing}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Energy CRM \& Self-Service Portals} $|$ \emph{React, Next.js, TypeScript, TanStack Query, Fastify, PostgreSQL}}{}
+  \resumeItemListStart
+    \resumeItem{CRM, customer portal and broker portal for \textbf{OTM (100K+ users)} and \textbf{HET (20K+ users)}, with tenant-isolated data and shared UI packages across markets.}
+  \resumeItemListEnd
+
+  % Personal project (Global-Switch repo). Add the GitHub link to the heading if the repo is public.
+  \resumeProjectHeading
+    {\textbf{JobHunt -- Multi-Country Job Board} $|$ \emph{Next.js 16, React 19, Neon PostgreSQL, JWT}}{}
+  \resumeItemListStart
+    \resumeItem{Aggregates live jobs from \textbf{8 hiring platforms} (Greenhouse, Lever, Ashby, Recruitee, SmartRecruiters, Workable, Personio, Workday) and public feeds into one normalized model, with fault-tolerant adapters that degrade instead of failing.}
+    \resumeItem{Resume parsing (PDF/DOCX), skill extraction, resume-to-job \textbf{match scoring} with skill-gap view, application pipeline tracker, rich-text resume editor with PDF export, and JWT authentication.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Rheora AI -- CRM Assistant} $|$ \emph{React, TypeScript, Zod, Azure OpenAI GPT-4.1, FastAPI}}{}
+  \resumeItemListStart
+    \resumeItem{Plain-English questions over live CRM data, with trust-first UX: no fake confidence badges, explicit empty-result signalling, accessible live-region updates.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Enterprise Multi-Tenant CRM} $|$ \emph{Flutter, .NET Core, MongoDB, Azure DevOps}}{}
+  \resumeItemListStart
+    \resumeItem{Tenant-isolated CRM serving multiple organizations from a shared platform; query optimization cut response time by about \textbf{40\%}.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Activity Planner} $|$ \emph{Flutter, .NET Core, MongoDB}}{}
+  \resumeItemListStart
+    \resumeItem{Real-time resort management for scheduling, guests and events, supporting \textbf{100+ concurrent users}.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{VFS Finland Document Verification} $|$ \emph{Angular, .NET Core, MySQL}}{}
+  \resumeItemListStart
+    \resumeItem{Secure document verification for a government-facing application, maintaining \textbf{99.9\% uptime}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+% Confirm MCA dates: some older resumes say 2024 -- 2026.
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Pratibha Institute of Business Management}{Pune, India}
+    {Master of Computer Applications (MCA)}{2023 -- 2025}
+  \resumeSubheading
+    {Indira College of Commerce and Science}{Pune, India}
+    {Bachelor of Computer Applications (CGPA: 8.89)}{2020 -- 2023}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeSubItem{\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)}}
+\resumeSubHeadingListEnd
+
+\end{document}

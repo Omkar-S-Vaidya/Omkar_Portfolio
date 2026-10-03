@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+% ONE-PAGE Full Stack resume (trimmed from Omkar_Vaidya_FullStack_Resume.tex).
+% Set at 10pt to fit one page; Key Achievements lives in the two-page version.
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+% Change the headline per application to mirror the job title.
+\begin{center}
+\textbf{\Huge \scshape Omkar Sanjay Vaidya} \\ \vspace{2pt}
+\large Full Stack Developer $|$ React $\cdot$ Next.js $\cdot$ Node.js $\cdot$ TypeScript $\cdot$ PostgreSQL $\cdot$ AWS $\cdot$ Azure \\ \vspace{2pt}
+\small +91 8806061235 $|$
+\href{mailto:omkarvaidya0504@gmail.com}{omkarvaidya0504@gmail.com} $|$
+Pune, India \\
+\href{https://www.linkedin.com/in/omkar-vaidya-54b7a0261/}{linkedin.com/in/omkar-vaidya-54b7a0261} $|$
+\href{https://github.com/Omkar-S-Vaidya}{github.com/Omkar-S-Vaidya} $|$
+\href{https://omkar-portfolio-mu-amber.vercel.app/}{omkar-portfolio-mu-amber.vercel.app}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Full Stack Developer (currently Lead Software Engineer) with 3+ years of experience building \textbf{scalable web applications end to end}, from PostgreSQL data models and Node.js/Fastify microservices to responsive React and Next.js interfaces, for platforms serving \textbf{120,000+ active users}. Top contributor to a 15-module operations CRM, builder of customer and broker portals, and author of the monorepo behind \textbf{6 country apps}. Works across the full SDLC with product, QA and business teams.}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Frontend:} React.js, Next.js (App Router, SSR), TypeScript, State Management (TanStack Query), React Hook Form, Zod, Tailwind CSS, HTML5, CSS3, Vite, Angular, Responsive Design, Accessibility (ARIA)}
+\resumeSubItem{\textbf{Backend:} Node.js, Fastify, Express.js, .NET Core, RESTful APIs, API Design, OpenAPI/Swagger, BFF, JWT, Keycloak (OIDC), OAuth 2.0, RBAC}
+\resumeSubItem{\textbf{Data \& Messaging:} PostgreSQL, MongoDB, MySQL, Redis, Data Modeling, Query Optimization, Apache Kafka, AWS SQS/SNS/EventBridge}
+\resumeSubItem{\textbf{Testing \& Quality:} Vitest (Jest-compatible), React Testing Library, MSW, Unit \& Integration Testing, ESLint, Prettier}
+\resumeSubItem{\textbf{Architecture \& DevOps:} Microservices, Multi-Tenant SaaS, Monorepos (Turborepo, pnpm), Design Systems, Docker, Kubernetes, Azure (AKS, DevOps), AWS Lambda, CI/CD}
+\resumeSubItem{\textbf{Languages \& Practices:} TypeScript, JavaScript (ES6+), C\#, SQL, Git, GitHub, SDLC, Agile/Scrum, Performance Optimization, Code Review, Cross-Functional Collaboration, Problem Solving}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Centralogic}{07/2023 -- Present}
+    {Lead Software Engineer}{09/2024 -- Present}
+  \resumeSubSubheading
+    {Software Engineer}{07/2023 -- 09/2024}
+  \resumeItemListStart
+
+    \resumeItem{Built and maintained the \textbf{operations CRM} in React and TypeScript (accounts, billing, payments, quotation, pricing, metering, market operations), one of its \textbf{top contributors} across the project lifetime.}
+
+    \resumeItem{Delivered \textbf{customer and broker portals} in \textbf{Next.js} for \textbf{120K+ users} (meter reads, usage, billing, payments, broker quoting) and the end-to-end \textbf{enrollment journey} from quote to contract to switch.}
+
+    \resumeItem{Authored the \textbf{monorepo scaffold} for \textbf{6 country apps} sharing \textbf{18 internal packages} (UI, theme, API client, auth, feature flags, i18n); a new market starts from a \textbf{\textasciitilde200-line} skeleton instead of a \textbf{200k+ line} app.}
+
+    \resumeItem{\textbf{Primary developer} on \textbf{Billing} and \textbf{Metering} services (Node.js, Fastify, PostgreSQL, Kafka, Redis), \textbf{sole developer} on Switching, designing \textbf{20+ secure REST APIs} with JWT, Keycloak and OpenAPI.}
+
+    \resumeItem{Led delivery of \textbf{Rheora AI}, an \textbf{Azure OpenAI GPT-4.1} assistant in the CRM: Cmd/Ctrl+K chat panel, conversations that persist across navigation, cancel/retry, run-ID tracing, \textbf{20+ test suites}.}
+
+    \resumeItem{Optimized APIs and database access to cut response times by \textbf{up to 40\%}; lead a team of \textbf{8 engineers} while staying hands-on across the stack.}
+
+  \resumeItemListEnd
+
+  \vspace{6pt}
+  \resumeSubheading
+    {Wibyng Technologies Pvt. Ltd.}{12/2022 -- 07/2023}
+    {Full Stack Developer Intern}{India}
+  \resumeItemListStart
+    \resumeItem{Built \textbf{10+} workflows across CRM, Vendor and Customer portals in PHP/CodeIgniter with multi-role auth, enabling about \textbf{25\% faster processing}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  % Personal project (Global-Switch repo). Add the GitHub link to the heading if the repo is public.
+  \resumeProjectHeading
+    {\textbf{JobHunt -- Multi-Country Job Board} $|$ \emph{Next.js 16, React 19, Neon PostgreSQL, JWT}}{}
+  \resumeItemListStart
+    \resumeItem{Aggregates live jobs from \textbf{8 hiring platforms} (Greenhouse, Lever, Ashby, Workday and more) and public feeds into one normalized model, with fault-tolerant adapters that degrade instead of failing.}
+    \resumeItem{Resume parsing (PDF/DOCX), skill extraction, resume-to-job \textbf{match scoring} with skill-gap view, application tracker, and rich-text resume editor with PDF export.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{UK Energy Suppliers -- OTM, HET, One Business Energy} $|$ \emph{Node.js, Fastify, React, PostgreSQL, AWS}}{}
+  \resumeItemListStart
+    \resumeItem{CRM, customer and broker portals, billing, metering and switching for \textbf{OTM (100K+ users)} and \textbf{HET (20K+ users)}, built against UK industry data flows.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION & CERTIFICATIONS-----------
+% Confirm MCA dates: some older resumes say 2024 -- 2026.
+\section{Education \& Certifications}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Master of Computer Applications (MCA)}, Pratibha Institute of Business Management, Pune \hfill 2023 -- 2025}\vspace{2pt}
+  \resumeItem{\textbf{Bachelor of Computer Applications (CGPA: 8.89)}, Indira College of Commerce and Science, Pune \hfill 2020 -- 2023}\vspace{2pt}
+  \resumeItem{\textbf{Microsoft Certified: Azure Fundamentals (AZ-900)}}
+\resumeSubHeadingListEnd
+
+\end{document}
